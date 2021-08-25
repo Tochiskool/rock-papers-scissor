@@ -42,4 +42,6 @@ A small game of choice
      losses++;
      alert("You've lost " + losses + " time(s).");
    }
-
+```
+### Project link
+[Project link](https://tochiskool.github.io/rock-papers-scissor/)

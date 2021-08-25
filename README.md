@@ -42,3 +42,4 @@ A small game of choice
      losses++;
      alert("You've lost " + losses + " time(s).");
    }
+

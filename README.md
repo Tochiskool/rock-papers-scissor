@@ -15,7 +15,7 @@ A small game of choice
     - Else if you choose inside the defined range  alert **Great choice**.
  
 - Logic to make PC choose amongst elements in the array
-   ``bash var pcChoice = rps[Math.floor(Math.random() * rps.length)];
+   `` var pcChoice = rps[Math.floor(Math.random() * rps.length)];
    **alert(`PC has choose ${pcChoice}`)**
    ``
 - Compare now
@@ -27,3 +27,18 @@ A small game of choice
     * alert Total wins, losses to the player.
 
 
+### Compare logic
+```
+  - Win/lose conditions:
+     if ((myChoice === "r" && pcChoice === "s") ||
+     (myChoice === "s" && pcChoice === "p") || 
+     (myChoice === "p" && pcChoice === "r")) {
+     wins++;
+     alert("You've won " + wins + " time(s)!");
+   } else if (myChoice === pcChoice) {
+     ties++;
+     alert("You've tied " + ties + " time(s).");
+   } else {
+     losses++;
+     alert("You've lost " + losses + " time(s).");
+   }
